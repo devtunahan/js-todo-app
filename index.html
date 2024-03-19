@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app"></div>
+        <h1>JS Todo App</h1>
+        <form id="todo-form">
+            <p class="msg"></p>
+            <input onchange="checkStatus()" type="text" id="todo-input" placeholder="Enter a task">
+            <button type="button" onclick="addTodo()">Add</button>
+        </form>
+        <ul class="todo-list">
+            <!-- Todo items will be dynamically added here -->
+        </ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
